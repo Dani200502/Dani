@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dani & Jenny Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#f8f4ee;
+--card:#ffffff;
+--gold:#b08d57;
+--text:#4a4a4a;
+--soft:#efe6db;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1400');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-family:'Cormorant Garamond',serif;
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero-content p{
+letter-spacing:3px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:var(--gold);
+color:white;
+text-decoration:none;
+border-radius:50px;
+}
+
+section{
+padding:80px 20px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+margin-bottom:40px;
+color:var(--gold);
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.couple{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.person{
+text-align:center;
+}
+
+.person img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid var(--soft);
+}
+
+.person h3{
+margin-top:20px;
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+}
+
+.countdown{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.time-box{
+background:white;
+padding:20px;
+border-radius:15px;
+min-width:90px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.time-box h2{
+color:var(--gold);
+}
+
+.event{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.footer{
+text-align:center;
+padding:60px 20px;
+background:#e8ddd0;
+}
+
+.music{
+position:fixed;
+right:20px;
+bottom:20px;
+background:var(--gold);
+color:white;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+z-index:999;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<div class="hero-content">
+<p>THE WEDDING OF</p>
+<h1>Dani & Jenny</h1>
+<p>10 November 2026</p>
+<a href="#opening" class="btn">Buka Undangan</a>
+</div>
+</div>
+
+<section id="opening">
+<div class="container">
+
+<h2 class="title">Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+
+<div class="card" style="text-align:center;">
+Dengan memohon rahmat dan ridho Allah SWT,
+kami bermaksud menyelenggarakan acara pernikahan putra-putri kami.
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Mempelai</h2>
+
+<div class="couple">
+
+<div class="person card">
+<img src="https://via.placeholder.com/500" alt="">
+<h3>Dani Prayoga</h3>
+<p>Putra dari</p>
+<p>Suradi & Elis Kuminar</p>
+</div>
+
+<div class="person card">
+<img src="https://via.placeholder.com/500" alt="">
+<h3>Jenny Mitasari</h3>
+<p>Putri dari</p>
+<p>Masdi & Indayati</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Menuju Hari Bahagia</h2>
+
+<div class="countdown">
+<div class="time-box"><h2 id="days">0</h2><p>Hari</p></div>
+<div class="time-box"><h2 id="hours">0</h2><p>Jam</p></div>
+<div class="time-box"><h2 id="minutes">0</h2><p>Menit</p></div>
+<div class="time-box"><h2 id="seconds">0</h2><p>Detik</p></div>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Detail Acara</h2>
+
+<div class="event">
+
+<div class="card">
+<h3>Akad Nikah</h3>
+<br>
+<p>10 November 2026</p>
+<p>09.00 WIB - Selesai</p>
+</div>
+
+<div class="card">
+<h3>Resepsi</h3>
+<br>
+<p>10 November 2026</p>
+<p>13.00 WIB - Selesai</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Cerita Kami</h2>
+
+<div class="card">
+<p>
+Pada tahun 2024 kami dipertemukan di tempat kerja.
+Berawal dari pertemanan dan komunikasi yang baik,
+hubungan kami berkembang menjadi sebuah komitmen.
+Dengan penuh rasa syukur, kami memutuskan untuk melangkah
+ke jenjang pernikahan dan membangun masa depan bersama.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Galeri</h2>
+
+<div class="gallery">
+
+<img src="https://via.placeholder.com/600x800">
+<img src="https://via.placeholder.com/600x800">
+<img src="https://via.placeholder.com/600x800">
+<img src="https://via.placeholder.com/600x800">
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Lokasi Acara</h2>
+
+<div class="card" style="text-align:center;">
+
+<p>
+GXF2+J6M, Haurkolot,
+Kec. Haurgeulis,
+Kabupaten Indramayu,
+Jawa Barat 45264
+</p>
+
+<br>
+
+<a class="btn"
+href="https://maps.google.com/?q=GXF2+J6M+Haurkolot"
+target="_blank">
+Buka Google Maps
+</a>
+
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Hadiah Pernikahan</h2>
+
+<div class="card" style="text-align:center;">
+<p>BCA</p>
+<h3>7115201948</h3>
+<p>a.n Dani Prayoga</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+<h2 class="title">Konfirmasi Kehadiran</h2>
+
+<div class="card" style="text-align:center;">
+
+<a class="btn"
+href="https://wa.me/6282130633960">
+Konfirmasi via WhatsApp
+</a>
+
+</div>
+
+</div>
+</section>
+
+<div class="footer">
+<h2>Dani & Jenny</h2>
+<p>Terima kasih atas doa dan restunya</p>
+</div>
+
+<audio id="music" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music" onclick="toggleMusic()">♫</div>
+
+<script>
+
+const weddingDate = new Date("Nov 10, 2026 09:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = weddingDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance%(1000*60))/1000);
+
+},1000);
+
+function toggleMusic(){
+const music=document.getElementById('music');
+
+if(music.paused){
+music.play();
+}else{
+music.pause();
+}
+}
+
+</script>
+
+</body>
+</html>
